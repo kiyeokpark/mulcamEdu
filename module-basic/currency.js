@@ -13,7 +13,11 @@ module.exports.updateCurrency = function(new_cur)
 {
   krw_usd = new_cur;
 }
-
+function currency(amt, src, trg ){
+  var rates = {"KRW":1.0, "USD":1100, "EUR":1200};
+  var chgAmt = amt*rates[src];
+  return chgAmt/rates[trg];
+}
 module.exports.convertCurrency = function( amt, from, to)
 {
   var ret = 0;
