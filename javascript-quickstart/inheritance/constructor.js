@@ -38,3 +38,6 @@ console.log(rect2);
 console.log(Object.getOwnPropertyNames(rect2.constructor.prototype));
 console.log(rect2.toString());
 console.log(rect2.getArea());
+
+console.log(rect2.__proto__);
+console.log(Square.prototype);
